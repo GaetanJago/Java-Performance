@@ -1,2 +1,2 @@
-# Java-Performance
-Dépôt Github utilisé pour les TPs de Java Performance, Semestre 9, Polytech Tours
+# painting-ants
+Some ants painting not so random stuff
