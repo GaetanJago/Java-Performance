@@ -5,6 +5,10 @@ package org.polytechtours.javaperformance.tp.paintingants;
 import java.awt.Color;
 import java.util.Random;
 
+import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.State;
+
 public class CFourmi {
   // Tableau des incrémentations à effectuer sur la position des fourmis
   // en fonction de la direction du deplacement
@@ -36,6 +40,7 @@ public class CFourmi {
 
   /*************************************************************************************************
   */
+  
   public CFourmi(Color pCouleurDeposee, Color pCouleurSuivie, float pProbaTD, float pProbaG, float pProbaD,
       float pProbaSuivre, CPainting pPainting, char pTypeDeplacement, float pInit_x, float pInit_y, int pInitDirection,
       int pTaille, float pSeuilLuminance, PaintingAnts pApplis) {
@@ -92,6 +97,7 @@ public class CFourmi {
    * Titre : void deplacer() Description : Fonction de deplacement de la fourmi
    *
    */
+  
   public synchronized void deplacer() {
     float tirage, prob1, prob2, prob3, total;
     int[] dir = new int[3];

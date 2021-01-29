@@ -11,9 +11,16 @@ import java.net.URLClassLoader;
 import java.util.StringTokenizer;
 import java.util.Vector;
 
+
 import javax.swing.Timer;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
+
 public class PaintingAnts extends java.applet.Applet implements Runnable {
+
+	private static final Logger LOGGER = (Logger) LogManager.getLogger(PaintingAnts.class);
+	
   private static final long serialVersionUID = 1L;
   // parametres
   private int mLargeur;
@@ -169,7 +176,9 @@ public class PaintingAnts extends java.applet.Applet implements Runnable {
    *
    */
   public void pause() {
-    mPause = !mPause;
+	//LOGGER.debug("Pause");
+    System.out.println("===Pause====");
+	  mPause = !mPause;
     // if (!mPause)
     // {
     // notify();
