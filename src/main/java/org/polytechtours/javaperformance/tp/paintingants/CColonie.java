@@ -12,8 +12,21 @@ package org.polytechtours.javaperformance.tp.paintingants;
 import java.util.Vector;
 
 public class CColonie implements Runnable {
+	
 
-  private Boolean mContinue = Boolean.TRUE;
+  public Boolean getmContinue() {
+		return mContinue;
+	}
+
+	public Vector<CFourmi> getmColonie() {
+		return mColonie;
+	}
+
+	public PaintingAnts getmApplis() {
+		return mApplis;
+	}
+
+private Boolean mContinue = Boolean.TRUE;
   private Vector<CFourmi> mColonie;
   private PaintingAnts mApplis;
 

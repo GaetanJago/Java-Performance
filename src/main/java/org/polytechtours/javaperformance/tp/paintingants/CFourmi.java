@@ -212,7 +212,7 @@ public class CFourmi {
    *
    * @return int
    */
-  private int modulo(int x, int m) {
+  public int modulo(int x, int m) {
     return (x + m) % m;
   }
 
